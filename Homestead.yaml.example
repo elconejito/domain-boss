@@ -1,0 +1,19 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /home/vagrant/code/domain-boss
+        to: /home/vagrant/code
+sites:
+    -
+        map: domain-boss.test
+        to: /home/vagrant/code/public
+databases:
+    - homestead
+name: domain-boss
+hostname: domain-boss
